@@ -1,3 +1,8 @@
+---
+layout: api_layout
+title: 资源下载
+order: 400
+---
 <a name="download"></a>
 ## 资源下载
 

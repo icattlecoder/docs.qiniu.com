@@ -1,3 +1,8 @@
+---
+layout: api_layout
+title: 变量
+order: 512
+---
 <a name="vars"></a>
 ## 变量
 

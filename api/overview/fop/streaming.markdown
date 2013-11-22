@@ -1,3 +1,8 @@
+---
+layout: api_layout
+title: 流媒体
+order: 200
+---
 <a name="streaming"></a>
 ## 流媒体播放
 

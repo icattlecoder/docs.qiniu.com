@@ -1,3 +1,8 @@
+---
+layout: api_layout
+title: 301重定向
+order: 513
+---
 <a name="redirect"></a>
 ## 301重定向
 
