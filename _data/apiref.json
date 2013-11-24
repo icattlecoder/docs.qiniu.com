@@ -2,13 +2,13 @@
 	"Name": "api/reference",
 	"Items": [
 		{
-			"Title": "HTTP状态码",
+			"Title": "状态码",
 			"Href": "api/reference/codes.html",
 			"Child": null,
 			"Order": 0
 		},
 		{
-			"Title": "HTTP错误码",
+			"Title": "错误格式",
 			"Href": "api/reference/err.html",
 			"Child": null,
 			"Order": 0
@@ -20,36 +20,36 @@
 			"Order": 0
 		},
 		{
-			"Title": "fop",
-			"Href": "",
+			"Title": "数据处理",
+			"Href": "api/reference/fop",
 			"Child": [
 				{
-					"Title": "",
+					"Title": "音频处理",
 					"Href": "api/reference/fop/audio.html",
 					"Child": null,
 					"Order": 0
 				},
 				{
-					"Title": "",
+					"Title": "图片处理",
 					"Href": "api/reference/fop/image.html",
 					"Child": null,
 					"Order": 0
 				},
 				{
-					"Title": "",
+					"Title": "其他数据处理",
 					"Href": "api/reference/fop/misc.html",
 					"Child": null,
 					"Order": 0
 				},
 				{
-					"Title": "",
-					"Href": "",
+					"Title": "预设数据处理指令",
+					"Href": "api/reference/fop/preset.html",
 					"Child": null,
 					"Order": 0
 				},
 				{
-					"Title": "",
-					"Href": "",
+					"Title": "视频处理",
+					"Href": "api/reference/fop/video.html",
 					"Child": null,
 					"Order": 0
 				}
@@ -57,11 +57,35 @@
 			"Order": 0
 		},
 		{
-			"Title": "资源管理",
+			"Title": "资源管理（rs）",
 			"Href": "api/reference/rs",
 			"Child": [
 				{
-					"Title": "获取资源信息",
+					"Title": "批量操作（batch）",
+					"Href": "api/reference/rs/batch.html",
+					"Child": null,
+					"Order": 0
+				},
+				{
+					"Title": "复制资源（copy）",
+					"Href": "api/reference/rs/copy.html",
+					"Child": null,
+					"Order": 0
+				},
+				{
+					"Title": "删除资源（delete）",
+					"Href": "api/reference/rs/delete.html",
+					"Child": null,
+					"Order": 0
+				},
+				{
+					"Title": "移动资源（move）",
+					"Href": "api/reference/rs/move.html",
+					"Child": null,
+					"Order": 0
+				},
+				{
+					"Title": "获取资源信息（stat）",
 					"Href": "api/reference/rs/stat.html",
 					"Child": null,
 					"Order": 0
@@ -70,11 +94,11 @@
 			"Order": 0
 		},
 		{
-			"Title": "security",
-			"Href": "",
+			"Title": "安全机制",
+			"Href": "api/reference/security",
 			"Child": [
 				{
-					"Title": "",
+					"Title": "管理授权",
 					"Href": "api/reference/security/access-token.html",
 					"Child": null,
 					"Order": 0
@@ -111,19 +135,19 @@
 			"Href": "api/reference/up",
 			"Child": [
 				{
-					"Title": "块上传",
+					"Title": "创建块（mkblk）",
 					"Href": "api/reference/up/mkblk.html",
 					"Child": null,
 					"Order": 100
 				},
 				{
-					"Title": "片上传",
+					"Title": "上传片（bput）",
 					"Href": "api/reference/up/bput.html",
 					"Child": null,
 					"Order": 90
 				},
 				{
-					"Title": "生成文件",
+					"Title": "创建文件（mkfile）",
 					"Href": "api/reference/up/mkfile.html",
 					"Child": null,
 					"Order": 10

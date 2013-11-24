@@ -1,6 +1,6 @@
 ---
 layout: api_layout
-title: HTTP状态码
+title: 状态码
 ---
 
 <a name="codes"></a>

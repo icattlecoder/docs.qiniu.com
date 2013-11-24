@@ -2,7 +2,7 @@
 	"Name": "guide",
 	"Items": [
 		{
-			"Title": "F&Q",
+			"Title": "常见问题",
 			"Href": "guide/faq.html",
 			"Child": null,
 			"Order": 0
