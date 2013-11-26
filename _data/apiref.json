@@ -2,62 +2,69 @@
 	"Name": "api/reference",
 	"Items": [
 		{
-			"Title": "状态码",
-			"Href": "api/reference/codes.html",
-			"Child": null,
-			"Order": 0
-		},
-		{
-			"Title": "错误格式",
-			"Href": "api/reference/err.html",
-			"Child": null,
-			"Order": 0
-		},
-		{
-			"Title": "HTTP扩展字段",
-			"Href": "api/reference/extended-headers.html",
-			"Child": null,
-			"Order": 0
-		},
-		{
-			"Title": "数据处理",
-			"Href": "api/reference/fop",
+			"Title": "安全机制",
+			"Href": "api/reference/security",
 			"Child": [
 				{
-					"Title": "音频处理",
-					"Href": "api/reference/fop/audio.html",
+					"Title": "凭证算法",
+					"Href": "api/reference/security/token-algorithm.html",
 					"Child": null,
-					"Order": 0
+					"Order": 990
 				},
 				{
-					"Title": "图片处理",
-					"Href": "api/reference/fop/image.html",
+					"Title": "上传策略",
+					"Href": "api/reference/security/put-policy.html",
 					"Child": null,
-					"Order": 0
+					"Order": 980
 				},
 				{
-					"Title": "其他数据处理",
-					"Href": "api/reference/fop/misc.html",
+					"Title": "上传凭证",
+					"Href": "api/reference/security/upload-token.html",
 					"Child": null,
-					"Order": 0
+					"Order": 970
 				},
 				{
-					"Title": "预设数据处理指令",
-					"Href": "api/reference/fop/preset.html",
+					"Title": "下载凭证",
+					"Href": "api/reference/security/download-token.html",
 					"Child": null,
-					"Order": 0
+					"Order": 960
 				},
 				{
-					"Title": "视频处理",
-					"Href": "api/reference/fop/video.html",
+					"Title": "管理凭证",
+					"Href": "api/reference/security/access-token.html",
 					"Child": null,
-					"Order": 0
+					"Order": 950
 				}
 			],
-			"Order": 0
+			"Order": 900
 		},
 		{
-			"Title": "资源管理（rs）",
+			"Title": "上传",
+			"Href": "api/reference/up",
+			"Child": [
+				{
+					"Title": "创建块（mkblk）",
+					"Href": "api/reference/up/mkblk.html",
+					"Child": null,
+					"Order": 100
+				},
+				{
+					"Title": "上传片（bput）",
+					"Href": "api/reference/up/bput.html",
+					"Child": null,
+					"Order": 90
+				},
+				{
+					"Title": "创建文件（mkfile）",
+					"Href": "api/reference/up/mkfile.html",
+					"Child": null,
+					"Order": 10
+				}
+			],
+			"Order": 800
+		},
+		{
+			"Title": "资源管理",
 			"Href": "api/reference/rs",
 			"Child": [
 				{
@@ -91,69 +98,74 @@
 					"Order": 0
 				}
 			],
-			"Order": 0
+			"Order": 600
 		},
 		{
-			"Title": "安全机制",
-			"Href": "api/reference/security",
+			"Title": "数据处理",
+			"Href": "api/reference/fop",
 			"Child": [
 				{
-					"Title": "管理授权",
-					"Href": "api/reference/security/access-token.html",
+					"Title": "保存处理结果（saveas）",
+					"Href": "api/reference/fop/saveas.html",
 					"Child": null,
-					"Order": 0
+					"Order": 190
 				},
 				{
-					"Title": "下载授权",
-					"Href": "api/reference/security/download-token.html",
+					"Title": "预设数据处理指令",
+					"Href": "api/reference/fop/preset.html",
 					"Child": null,
-					"Order": 0
+					"Order": 180
 				},
 				{
-					"Title": "上传策略",
-					"Href": "api/reference/security/put-policy.html",
+					"Title": "图片处理",
+					"Href": "api/reference/fop/image.html",
 					"Child": null,
-					"Order": 0
+					"Order": 160
 				},
 				{
-					"Title": "凭证算法",
-					"Href": "api/reference/security/token-algorithm.html",
+					"Title": "音频处理",
+					"Href": "api/reference/fop/audio.html",
 					"Child": null,
-					"Order": 0
+					"Order": 150
 				},
 				{
-					"Title": "上传凭证",
-					"Href": "api/reference/security/upload-token.html",
+					"Title": "视频处理",
+					"Href": "api/reference/fop/video.html",
 					"Child": null,
-					"Order": 0
+					"Order": 140
+				},
+				{
+					"Title": "文档处理",
+					"Href": "api/reference/fop/document.html",
+					"Child": null,
+					"Order": 130
+				},
+				{
+					"Title": "其他数据处理支持",
+					"Href": "api/reference/fop/misc.html",
+					"Child": null,
+					"Order": 110
 				}
 			],
-			"Order": 0
+			"Order": 500
 		},
 		{
-			"Title": "资源上传",
-			"Href": "api/reference/up",
-			"Child": [
-				{
-					"Title": "创建块（mkblk）",
-					"Href": "api/reference/up/mkblk.html",
-					"Child": null,
-					"Order": 100
-				},
-				{
-					"Title": "上传片（bput）",
-					"Href": "api/reference/up/bput.html",
-					"Child": null,
-					"Order": 90
-				},
-				{
-					"Title": "创建文件（mkfile）",
-					"Href": "api/reference/up/mkfile.html",
-					"Child": null,
-					"Order": 10
-				}
-			],
-			"Order": 0
+			"Title": "状态码",
+			"Href": "api/reference/codes.html",
+			"Child": null,
+			"Order": 300
+		},
+		{
+			"Title": "HTTP扩展字段",
+			"Href": "api/reference/extended-headers.html",
+			"Child": null,
+			"Order": 200
+		},
+		{
+			"Title": "错误格式",
+			"Href": "api/reference/err.html",
+			"Child": null,
+			"Order": 100
 		}
 	]
 }
