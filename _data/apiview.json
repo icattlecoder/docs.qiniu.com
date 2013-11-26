@@ -20,7 +20,7 @@
 			"Order": 600
 		},
 		{
-			"Title": "资源上传",
+			"Title": "上传",
 			"Href": "api/overview/up",
 			"Child": [
 				{
@@ -94,15 +94,59 @@
 			"Order": 500
 		},
 		{
-			"Title": "资源下载",
-			"Href": "api/overview/download.html",
-			"Child": null,
-			"Order": 400
+			"Title": "下载",
+			"Href": "api/overview/dn",
+			"Child": [
+				{
+					"Title": "安全机制",
+					"Href": "api/overview/dn/security.html",
+					"Child": null,
+					"Order": 490
+				},
+				{
+					"Title": "资源下载",
+					"Href": "api/overview/dn/download.html",
+					"Child": null,
+					"Order": 480
+				},
+				{
+					"Title": "下载设置",
+					"Href": "api/overview/dn/download-settings.html",
+					"Child": null,
+					"Order": 320
+				},
+				{
+					"Title": "高级下载",
+					"Href": "api/overview/dn/advanced-download.html",
+					"Child": null,
+					"Order": 310
+				}
+			],
+			"Order": 350
 		},
 		{
 			"Title": "资源管理",
 			"Href": "api/overview/rs",
-			"Child": [],
+			"Child": [
+				{
+					"Title": "安全机制",
+					"Href": "api/overview/rs/security.html",
+					"Child": null,
+					"Order": 350
+				},
+				{
+					"Title": "常规资源管理",
+					"Href": "api/overview/rs/rs.html",
+					"Child": null,
+					"Order": 340
+				},
+				{
+					"Title": "批量操作",
+					"Href": "api/overview/rs/batch.html",
+					"Child": null,
+					"Order": 330
+				}
+			],
 			"Order": 300
 		},
 		{
@@ -110,22 +154,34 @@
 			"Href": "api/overview/fop",
 			"Child": [
 				{
-					"Title": "自定义数据处理",
-					"Href": "api/overview/fop/custom-fop.html",
+					"Title": "数据处理机制",
+					"Href": "api/overview/fop/fop.html",
 					"Child": null,
-					"Order": 200
+					"Order": 290
 				},
 				{
 					"Title": "处理结果持久化",
 					"Href": "api/overview/fop/persistent-fop.html",
 					"Child": null,
-					"Order": 200
+					"Order": 270
 				},
 				{
-					"Title": "流媒体",
+					"Title": "内置数据处理功能",
+					"Href": "api/overview/fop/builtin-fop.html",
+					"Child": null,
+					"Order": 250
+				},
+				{
+					"Title": "流媒体播放",
 					"Href": "api/overview/fop/streaming.html",
 					"Child": null,
-					"Order": 200
+					"Order": 240
+				},
+				{
+					"Title": "自定义数据处理",
+					"Href": "api/overview/fop/custom-fop.html",
+					"Child": null,
+					"Order": 210
 				}
 			],
 			"Order": 200

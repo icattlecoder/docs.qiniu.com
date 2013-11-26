@@ -1,7 +1,7 @@
 ---
 layout: api_layout
-title: 流媒体
-order: 200
+title: 流媒体播放
+order: 240
 ---
 <a name="streaming"></a>
 ## 流媒体播放

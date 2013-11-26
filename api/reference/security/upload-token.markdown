@@ -1,6 +1,7 @@
 ---
 layout: api_layout
 title: 上传凭证
+order: 970
 ---
 
 <a name="upload-token"></a>
