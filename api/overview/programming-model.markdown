@@ -13,7 +13,7 @@ order: 700
 
 我们建议的基本模型如下：
 
-<img src="images/programming-model.png"></img>
+![基本模型](images/programming-model.png "基本模型")
 
 从该模型图，我们可以看到以下这几个关键组件：
 
