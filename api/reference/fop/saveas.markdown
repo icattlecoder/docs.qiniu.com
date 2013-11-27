@@ -1,11 +1,11 @@
 ---
 layout: api_layout
-title: 保存处理结果（saveas）
+title: 处理结果另存为（saveas）
 order: 190
 ---
 
 <a name="saveas"></a>
-## 保存处理结果（saveas）
+## 处理结果另存为（saveas）
 
 七牛云存储的云处理API满足如下规格:
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api_layout
 title: "其他数据处理支持"
 order: 110
 ---
@@ -25,7 +25,7 @@ order: 110
 
 <a name="qrcode-api"></a>
 
-## API 规格
+### API 规格
 
 **请求**
 
@@ -56,7 +56,7 @@ L 是最低级别的冗余度，H 最高，冗余度越高，生成的图片体�
 
 <a name="qrcode-sample"></a>
 
-## 样例
+### 样例
 
 示例1: Mode=0 时，基于 URL 生成二维码
 
@@ -92,35 +92,3 @@ L 是最低级别的冗余度，H 最高，冗余度越高，生成的图片体�
 二维码中的内容实际上是文本，却可存储多种类型的内容，具体用例可见:
 
 - <https://code.google.com/p/zxing/wiki/BarcodeContents>
-
-
-
-<a name="alias"></a>
-
-## 别名
-
-如果觉得 `url?<fop1>|<fop2>|<fop3>|<fopN>` 这样的形式够冗长，还可以为这些串行的 `<fop>` 集合定义一个友好别名。如此一来，就可以用友好URL风格进行访问。
-
-我们先来熟悉 [qboxrsctl](/tools/qboxrsctl.html) 的两个命令行，
-
-    // 定义 url 和 fop 之间的分隔符为 separator 
-    qboxrsctl separator <bucket> <separator>
-
-    // 定义 fop 的别名为 aliasName
-    qboxrsctl style <bucket> <aliasName> <fop>
-
-例如:
-
-    qboxrsctl separator <bucket> "."
-    qboxrsctl style <bucket> "jpg" "vframe/jpg/offset/7/w/480/h/360|watermark/1/image/aHR0cDovL3d3dy5iMS5xaW5pdWRuLmNvbS9pbWFnZXMvbG9nby0yLnBuZw=="
-
-那么，以下两个 URL 则等价:
-
-原始URL:
-
-- <http://open.qiniudn.com/thinking-in-go.mp4?vframe/jpg/offset/7/w/480/h/360|watermark/1/image/aHR0cDovL3d3dy5iMS5xaW5pdWRuLmNvbS9pbWFnZXMvbG9nby0yLnBuZw==>
-
-友好风格URL:
-
-- <http://open.qiniudn.com/thinking-in-go.mp4.jpg>
-
