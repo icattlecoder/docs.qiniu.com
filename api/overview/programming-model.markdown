@@ -13,7 +13,7 @@ order: 700
 
 我们建议的基本模型如下：
 
-![基本模型](images/programming-model.png "基本模型")
+![基本模型](img/programming-model.png "基本模型")
 
 从该模型图，我们可以看到以下这几个关键组件：
 
@@ -42,11 +42,11 @@ order: 700
 
 	客户端在上传资源到云存储之前要先从业务服务器获取一个有效的上传凭证，因此需要先后和两个服务端打交道。
 	
-	![基本上传流程](images/basic-upload.png "基本上传流程")
+	![基本上传流程](img/basic-upload.png "基本上传流程")
 	
 	如果有设置回调，则上传完成时七牛云存储会自动回调到指定的业务服务器。
 
-	![带回调的上传流程](images/upload-with-callback.png "带回调的上传流程")
+	![带回调的上传流程](img/upload-with-callback.png "带回调的上传流程")
 
 1. 下载
 
