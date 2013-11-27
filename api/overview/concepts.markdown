@@ -6,6 +6,15 @@ order: 800
 <a name="concepts"></a>
 ## 关键概念
 
+<a name="user"></a>
+### 开发者、客户、用户
+
+本文档中会经常性的提到几个角色。
+
+开发者是云存储服务的使用者，因此在文档中提到的客户等同于开发者。用户则是开发者所推出产品的直接使用者，也是云存储服务的间接使用者。
+
+![用户场景](img/usecase.png "用户场景")
+
 <a name="key-value"></a>
 ### 键值对（key-value）
 
@@ -92,9 +101,19 @@ http://qiniuphotos.qiniudn.com/gogopher.jpg?imageView/2/w/200/h/200
 <a name="style"></a>
 ### 资源样式（style）
 
-样式是对一个或一组数据处理操作的命名，假如我们定义了一个名为`small`的图片样式，用来将目标图片转换为特定尺寸，我们可以这样使用来获取符合期望的转换后图片：
+如果觉得 url?<fop1>|<fop2>|<fop3>|<fopN> 这样的形式够冗长，还可以为这些串行的 <fop> 集合定义一个友好别名，之后可以用这个友好的别名来取代冗长的指令和参数。我们称这个别名为样式（style）。样式是对一个或一组数据处理操作的命名。
+
+假如我们需要从目标视频中截取指定的一帧图片，并对该图片打上一个水印后最为该视频的封面图片，该数据处理的示例URL如下所示：
 
 ```
-http://i1.qiniu.com/sample1.png-small
+http://open.qiniu.com/thinkingingo.mp4?vframe/jpg/offset/7/w/480/h/360
+|watermark/1/image/aHR0cDovL3d3dy5iMS5xaW5pdWRuLmNvbS9pbWFnZXMvbG9nby0yLnBuZw==
 ```
 
+这个URL看起来非常长且难以理解目的。我们可以定义一个名为`coverpic`的样式，对应到相应的数据处理内容，则之后我们可以用如下使用方式：
+
+```
+http://open.qiniu.com/thinkingingo.mp4-coverpic
+```
+
+显然相比清晰很多也方便很多。
