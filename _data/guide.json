@@ -2,10 +2,114 @@
 	"Name": "guide",
 	"Items": [
 		{
-			"Title": "使用七牛加速静态文件",
-			"Href": "guide/speed_up_staticfile.html",
+			"Title": "概述",
+			"Href": "guide/overview.html",
 			"Child": null,
-			"Order": 0
+			"Order": 900
+		},
+		{
+			"Title": "做一个有意思的产品",
+			"Href": "guide/product.html",
+			"Child": null,
+			"Order": 800
+		},
+		{
+			"Title": "架构设计",
+			"Href": "guide/architecture.html",
+			"Child": null,
+			"Order": 700
+		},
+		{
+			"Title": "开发技术选型",
+			"Href": "guide/technology.html",
+			"Child": null,
+			"Order": 600
+		},
+		{
+			"Title": "环境准备",
+			"Href": "guide/environment.html",
+			"Child": null,
+			"Order": 500
+		},
+		{
+			"Title": "编码阶段",
+			"Href": "guide/coding",
+			"Child": [
+				{
+					"Title": "服务端",
+					"Href": "guide/coding/server.html",
+					"Child": null,
+					"Order": 500
+				},
+				{
+					"Title": "测试一下服务端",
+					"Href": "guide/coding/server-testing.html",
+					"Child": null,
+					"Order": 400
+				},
+				{
+					"Title": "Web端展现",
+					"Href": "guide/coding/web.html",
+					"Child": null,
+					"Order": 300
+				},
+				{
+					"Title": "移动端",
+					"Href": "guide/coding/mobile.html",
+					"Child": null,
+					"Order": 200
+				},
+				{
+					"Title": "集成调试",
+					"Href": "guide/coding/integration.html",
+					"Child": null,
+					"Order": 100
+				}
+			],
+			"Order": 400
+		},
+		{
+			"Title": "产品上线与运维",
+			"Href": "guide/op",
+			"Child": [
+				{
+					"Title": "部署",
+					"Href": "guide/op/deployment.html",
+					"Child": null,
+					"Order": 400
+				},
+				{
+					"Title": "系统监控",
+					"Href": "guide/op/monitoring.html",
+					"Child": null,
+					"Order": 300
+				},
+				{
+					"Title": "运维安全",
+					"Href": "guide/op/security.html",
+					"Child": null,
+					"Order": 200
+				},
+				{
+					"Title": "数据分析与统计",
+					"Href": "guide/op/analytics.html",
+					"Child": null,
+					"Order": 100
+				}
+			],
+			"Order": 300
+		},
+		{
+			"Title": "下一步：还可以做哪些有意思的事情",
+			"Href": "guide/future.html",
+			"Child": null,
+			"Order": 200
+		},
+		{
+			"Title": "开发小结",
+			"Href": "guide/conclusion.html",
+			"Child": null,
+			"Order": 100
 		}
 	]
 }

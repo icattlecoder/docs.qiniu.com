@@ -41,13 +41,13 @@
 
 	这类图例效果可用彩色照片作为类比。立体且有丰富的颜色表达。虽然不一定要完全拟物（比如进行一些适当的夸张），但整体而言要给人立体的生动感。示例如下：
 
-	![拟物图标示例](images/drawing-tools-icon-reality.png "拟物图标示例")
+	![拟物图标示例](img/drawing-tools-icon-reality.png "拟物图标示例")
 
 1. 平面单色图例
 
 	这种图例效果可使用象形文字作为类比。平面，单色，甚至一般情况下线条的粗细看起来都是一致的。
 
-	![抽象图标示例](images/drawing-tools-icon-abstract.png "抽象图标示例")
+	![抽象图标示例](img/drawing-tools-icon-abstract.png "抽象图标示例")
 
 ### 部署结构图
 
@@ -65,7 +65,7 @@
 
 流程图采用最基本的流程图例，尽可能不使用偏复杂的图例，比如预定义流程等，尽可能只使用以下示例中的元素：
 
-![流程图示例](images/drawing-tools-workflow.png "流程图示例")
+![流程图示例](img/drawing-tools-workflow.png "流程图示例")
 
 ### UML图
 
@@ -75,7 +75,7 @@
 
 以下是建议的时序图风格示例：
 
-![时序图示例](images/drawing-tools-sequence-diagram.png "时序图示例")
+![时序图示例](img/drawing-tools-sequence-diagram.png "时序图示例")
 
 ### UI原型图
 
