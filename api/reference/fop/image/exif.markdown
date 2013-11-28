@@ -1,11 +1,11 @@
 ---
 layout: api_layout
-title: 获取图片EXIF信息（exif）
+title: 图片EXIF信息（exif）
 order: 172
 ---
 
 <a name="exif"></a>
-## 获取图片EXIF信息
+## 图片EXIF信息（exif）
 
 EXIF (Exchangeable Image File Format)，是专门为数码相机的照片设定的可交换图像文件格式。详情参见[EXIF](http://zh.wikipedia.org/wiki/EXIF)。
 

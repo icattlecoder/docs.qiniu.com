@@ -1,11 +1,11 @@
 ---
 layout: api_layout
-title: 获取图片基本信息（imageInfo）
+title: 图片基本信息（imageInfo）
 order: 173
 ---
 
 <a name="imageInfo"></a>
-## 获取图片基本信息（imageInfo）
+## 图片基本信息（imageInfo）
 
 图片基本信息包括图片格式,图片大小，色彩模式。
 
