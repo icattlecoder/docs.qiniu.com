@@ -3,8 +3,8 @@ layout: api_layout
 title: 管理操作
 order: 340
 ---
-<a name="rs-manage"></a>
 
+<a name="rs-manage"></a>
 ## 管理操作
 
 用户可以对存储在七牛云存储的资源进行管理和操作。与文件管理类似，七牛云存储资源管理的主要操作有：查看、移动、复制、删除及其对应的批量操作。
