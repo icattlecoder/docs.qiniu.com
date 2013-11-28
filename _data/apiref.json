@@ -68,34 +68,34 @@
 			"Href": "api/reference/rs",
 			"Child": [
 				{
-					"Title": "批量操作（batch）",
-					"Href": "api/reference/rs/batch.html",
+					"Title": "获取资源信息（stat）",
+					"Href": "api/reference/rs/stat.html",
 					"Child": null,
-					"Order": 0
+					"Order": 900
 				},
 				{
 					"Title": "复制资源（copy）",
 					"Href": "api/reference/rs/copy.html",
 					"Child": null,
-					"Order": 0
-				},
-				{
-					"Title": "删除资源（delete）",
-					"Href": "api/reference/rs/delete.html",
-					"Child": null,
-					"Order": 0
+					"Order": 800
 				},
 				{
 					"Title": "移动资源（move）",
 					"Href": "api/reference/rs/move.html",
 					"Child": null,
-					"Order": 0
+					"Order": 700
 				},
 				{
-					"Title": "获取资源信息（stat）",
-					"Href": "api/reference/rs/stat.html",
+					"Title": "删除资源（delete）",
+					"Href": "api/reference/rs/delete.html",
 					"Child": null,
-					"Order": 0
+					"Order": 600
+				},
+				{
+					"Title": "批量操作（batch）",
+					"Href": "api/reference/rs/batch.html",
+					"Child": null,
+					"Order": 500
 				}
 			],
 			"Order": 600
@@ -105,21 +105,34 @@
 			"Href": "api/reference/fop",
 			"Child": [
 				{
-					"Title": "处理结果持久化（pfop）",
-					"Href": "api/reference/fop/pfop.html",
+					"Title": "预设数据处理指令",
+					"Href": "api/reference/fop/preset-fops.html",
 					"Child": null,
-					"Order": 295
+					"Order": 190
 				},
 				{
 					"Title": "处理结果另存为（saveas）",
 					"Href": "api/reference/fop/saveas.html",
 					"Child": null,
-					"Order": 190
+					"Order": 185
 				},
 				{
-					"Title": "预设数据处理指令",
-					"Href": "api/reference/fop/preset-fops.html",
-					"Child": null,
+					"Title": "异步处理",
+					"Href": "api/reference/fop/pfop",
+					"Child": [
+						{
+							"Title": "处理已存在资源（pfop）",
+							"Href": "api/reference/fop/pfop/pfop.html",
+							"Child": null,
+							"Order": 300
+						},
+						{
+							"Title": "获取异步处理结果（p）",
+							"Href": "api/reference/fop/pfop/p.html",
+							"Child": null,
+							"Order": 200
+						}
+					],
 					"Order": 180
 				},
 				{

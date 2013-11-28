@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api_layout
 title: 管道
 order: 285
 ---
