@@ -154,6 +154,12 @@
 					"Order": 290
 				},
 				{
+					"Title": "管道",
+					"Href": "api/overview/fop/pipeline.html",
+					"Child": null,
+					"Order": 285
+				},
+				{
 					"Title": "处理结果持久化",
 					"Href": "api/overview/fop/persistent-fop.html",
 					"Child": null,

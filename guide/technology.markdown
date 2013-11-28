@@ -1,7 +1,7 @@
 ---
 layout: api_layout
-title: 开发技术选型
+title: 选择开发技术
 order: 600
 ---
 
-## 开发技术选型
+## 选择开发技术

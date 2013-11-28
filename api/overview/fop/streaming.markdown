@@ -80,4 +80,4 @@ avthumb/m3u8/segtime/<SegSeconds>
             /ar/<SamplingRate>
 ```
 
-完整的音视频处理参数含义解释请参见[音频处理规格]()和[视频处理规格]()。
+完整的音视频处理参数含义解释请参见[音视频处理规格（avthumb）](/api/reference/fop/avthumb.html)。

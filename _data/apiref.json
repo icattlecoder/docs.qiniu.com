@@ -123,32 +123,68 @@
 					"Order": 180
 				},
 				{
-					"Title": "图片处理",
-					"Href": "api/reference/fop/image.html",
+					"Title": "图片处理（imageView）",
+					"Href": "api/reference/fop/imageview.html",
+					"Child": null,
+					"Order": 175
+				},
+				{
+					"Title": "高级图片处理（imageMogr）",
+					"Href": "api/reference/fop/imagemogr.html",
+					"Child": null,
+					"Order": 174
+				},
+				{
+					"Title": "获取图片基本信息（imageInfo）",
+					"Href": "api/reference/fop/imageinfo.html",
+					"Child": null,
+					"Order": 173
+				},
+				{
+					"Title": "获取图片EXIF信息（exif）",
+					"Href": "api/reference/fop/exif.html",
+					"Child": null,
+					"Order": 172
+				},
+				{
+					"Title": "水印（watermark）",
+					"Href": "api/reference/fop/watermark.html",
 					"Child": null,
 					"Order": 160
 				},
 				{
-					"Title": "音频处理",
-					"Href": "api/reference/fop/audio.html",
+					"Title": "音视频处理（avthumb）",
+					"Href": "api/reference/fop/avthumb.html",
 					"Child": null,
 					"Order": 150
 				},
 				{
-					"Title": "视频处理",
-					"Href": "api/reference/fop/video.html",
+					"Title": "视频截图（vframe）",
+					"Href": "api/reference/fop/vframe.html",
 					"Child": null,
-					"Order": 140
+					"Order": 149
 				},
 				{
-					"Title": "文档处理",
-					"Href": "api/reference/fop/document.html",
+					"Title": "音视频片段（segtime）",
+					"Href": "api/reference/fop/segtime.html",
 					"Child": null,
-					"Order": 130
+					"Order": 148
 				},
 				{
-					"Title": "其他数据处理支持",
-					"Href": "api/reference/fop/misc.html",
+					"Title": "视频水印（vwatermark）",
+					"Href": "api/reference/fop/video-watermark.html",
+					"Child": null,
+					"Order": 139
+				},
+				{
+					"Title": "二维码（qrcode）",
+					"Href": "api/reference/fop/qrcode.html",
+					"Child": null,
+					"Order": 110
+				},
+				{
+					"Title": "MD转HTML（md2html）",
+					"Href": "api/reference/fop/md2html.html",
 					"Child": null,
 					"Order": 110
 				}
