@@ -15,6 +15,14 @@ body {
   padding: 0px;
   height: 100%;
 }
+thead{
+    background-color:#efefef;
+}
+thead td{
+	white-space:nowrap;
+	font-weight: bold;
+    text-align: center;
+}
 
 p {
   margin: 1em 0;
@@ -59,7 +67,6 @@ h6 {
 a {
   color: #4183C4;
   text-decoration: none;
-  word-break: break-all;
 }
 
 a:hover,
@@ -119,7 +126,7 @@ a img {
 
 #header a.logo {
   float: left;
-  margin-top: 30px;
+  margin-top: 15px;
   font-size:30px;
   display: inline-block;
 }
@@ -182,8 +189,7 @@ div.sidebar-module {
   display: block;
   width: 202px;
   margin-bottom: 20px;
-  font-size: 12px;
-}
+  font-size: 12px;}
 
 div.sidebar-module > ul {
   background: #fafafb;
@@ -216,6 +222,7 @@ div.sidebar-module > ul > li:hover {
 }
 
 
+div.sidebar-module > ul div ,
 div.sidebar-module > ul h3 {
   margin: 0px;
   color: #666;
@@ -243,7 +250,6 @@ div.sidebar-module > ul h3.disable {
   background-image: linear-gradient(top, #e1e1e1, #d1d1d1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e1e1e1', EndColorStr='#d1d1d1');
 }
-
 
 div.sidebar-module > ul h3 a,
 div.sidebar-module > ul h3.disable span {
@@ -461,6 +467,11 @@ div.sidebar-module ul ul li span {
   list-style-type: disc;
 }
 
+.content ul li {
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
 .content img {
   max-width: 100%;
   border: 1px solid #dddddd;
@@ -521,7 +532,6 @@ pre {
   background: none repeat scroll 0 0 #f8f8f8;
   border: 1px solid #bbb;
   line-height: 1.2em;
-  font: 14px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   padding: 10px;
   overflow:auto;
   -webkit-border-radius: 3px;
@@ -877,12 +887,13 @@ div.expandable > ul h3 > a.expanded:hover {
 }
 .api td, .api th {
   vertical-align: middle;
-  padding-left: 10px;
+  padding: 8px;
   border: 1px solid #ccc;
   height: 28px;
 }
 .spapi{
-	margin-left:10px;
+    padding: 8px 0 8px 10px;
+	font-weight:blod;
 }
 /* @end */
 #version{
@@ -893,11 +904,11 @@ div.expandable > ul h3 > a.expanded:hover {
     margin: 0 10px;
 }
 #scrollUp {
-								bottom: 20px;
-								right: 20px;
-								height: 38px;
-								width: 38px;
-								background: url("../img/top.png") no-repeat;
+	bottom: 20px;
+	right: 20px;
+	height: 38px;
+	width: 38px;
+	background: url("../img/top.png") no-repeat;
 }
 .popover {
     background-clip: padding-box;
@@ -916,16 +927,16 @@ div.expandable > ul h3 > a.expanded:hover {
 		display:none;
 }
 .popover-title {
-				padding: 8px 14px;
-				margin: 0;
-				font-size: 14px;
-				font-weight: normal;
-				line-height: 18px;
-				background-color: #f7f7f7;
-				border-bottom: 1px solid #ebebeb;
-				-webkit-border-radius: 5px 5px 0 0;
-				-moz-border-radius: 5px 5px 0 0;
-				border-radius: 5px 5px 0 0;
+	padding: 8px 14px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 18px;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ebebeb;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 #popover-content{
 		padding:10px;
@@ -940,4 +951,7 @@ div.expandable > ul h3 > a.expanded:hover {
     bottom: -11px;
     left: 50%;
     margin-left: -11px;
+}
+.imgwrap{
+	text-align:center;
 }

@@ -1,0 +1,246 @@
+{
+	"Name": "api/reference",
+	"Items": [
+		{
+			"Title": "安全机制",
+			"Href": "api/reference/security",
+			"Child": [
+				{
+					"Title": "凭证算法",
+					"Href": "api/reference/security/token-algorithm.html",
+					"Child": null,
+					"Order": 990
+				},
+				{
+					"Title": "上传策略",
+					"Href": "api/reference/security/put-policy.html",
+					"Child": null,
+					"Order": 980
+				},
+				{
+					"Title": "上传凭证",
+					"Href": "api/reference/security/upload-token.html",
+					"Child": null,
+					"Order": 970
+				},
+				{
+					"Title": "下载凭证",
+					"Href": "api/reference/security/download-token.html",
+					"Child": null,
+					"Order": 960
+				},
+				{
+					"Title": "管理凭证",
+					"Href": "api/reference/security/access-token.html",
+					"Child": null,
+					"Order": 950
+				}
+			],
+			"Order": 900
+		},
+		{
+			"Title": "上传",
+			"Href": "api/reference/up",
+			"Child": [
+				{
+					"Title": "创建块（mkblk）",
+					"Href": "api/reference/up/mkblk.html",
+					"Child": null,
+					"Order": 100
+				},
+				{
+					"Title": "上传片（bput）",
+					"Href": "api/reference/up/bput.html",
+					"Child": null,
+					"Order": 90
+				},
+				{
+					"Title": "创建文件（mkfile）",
+					"Href": "api/reference/up/mkfile.html",
+					"Child": null,
+					"Order": 10
+				}
+			],
+			"Order": 800
+		},
+		{
+			"Title": "资源管理",
+			"Href": "api/reference/rs",
+			"Child": [
+				{
+					"Title": "获取资源信息（stat）",
+					"Href": "api/reference/rs/stat.html",
+					"Child": null,
+					"Order": 900
+				},
+				{
+					"Title": "复制资源（copy）",
+					"Href": "api/reference/rs/copy.html",
+					"Child": null,
+					"Order": 800
+				},
+				{
+					"Title": "移动资源（move）",
+					"Href": "api/reference/rs/move.html",
+					"Child": null,
+					"Order": 700
+				},
+				{
+					"Title": "删除资源（delete）",
+					"Href": "api/reference/rs/delete.html",
+					"Child": null,
+					"Order": 600
+				},
+				{
+					"Title": "批量操作（batch）",
+					"Href": "api/reference/rs/batch.html",
+					"Child": null,
+					"Order": 500
+				}
+			],
+			"Order": 600
+		},
+		{
+			"Title": "数据处理",
+			"Href": "api/reference/fop",
+			"Child": [
+				{
+					"Title": "预设数据处理指令",
+					"Href": "api/reference/fop/preset-fops.html",
+					"Child": null,
+					"Order": 190
+				},
+				{
+					"Title": "处理结果另存为（saveas）",
+					"Href": "api/reference/fop/saveas.html",
+					"Child": null,
+					"Order": 185
+				},
+				{
+					"Title": "异步处理",
+					"Href": "api/reference/fop/pfop",
+					"Child": [
+						{
+							"Title": "处理已存在资源（pfop）",
+							"Href": "api/reference/fop/pfop/pfop.html",
+							"Child": null,
+							"Order": 300
+						},
+						{
+							"Title": "获取异步处理结果（p）",
+							"Href": "api/reference/fop/pfop/p.html",
+							"Child": null,
+							"Order": 200
+						}
+					],
+					"Order": 180
+				},
+				{
+					"Title": "图片",
+					"Href": "api/reference/fop/image",
+					"Child": [
+						{
+							"Title": "图片处理（imageView）",
+							"Href": "api/reference/fop/image/imageview.html",
+							"Child": null,
+							"Order": 175
+						},
+						{
+							"Title": "高级图片处理（imageMogr）",
+							"Href": "api/reference/fop/image/imagemogr.html",
+							"Child": null,
+							"Order": 174
+						},
+						{
+							"Title": "图片基本信息（imageInfo）",
+							"Href": "api/reference/fop/image/imageinfo.html",
+							"Child": null,
+							"Order": 173
+						},
+						{
+							"Title": "图片EXIF信息（exif）",
+							"Href": "api/reference/fop/image/exif.html",
+							"Child": null,
+							"Order": 172
+						},
+						{
+							"Title": "水印（watermark）",
+							"Href": "api/reference/fop/image/watermark.html",
+							"Child": null,
+							"Order": 160
+						}
+					],
+					"Order": 170
+				},
+				{
+					"Title": "音视频",
+					"Href": "api/reference/fop/av",
+					"Child": [
+						{
+							"Title": "音视频处理（avthumb）",
+							"Href": "api/reference/fop/av/avthumb.html",
+							"Child": null,
+							"Order": 150
+						},
+						{
+							"Title": "视频截图（vframe）",
+							"Href": "api/reference/fop/av/vframe.html",
+							"Child": null,
+							"Order": 149
+						},
+						{
+							"Title": "音视频片段（segtime）",
+							"Href": "api/reference/fop/av/segtime.html",
+							"Child": null,
+							"Order": 148
+						},
+						{
+							"Title": "视频水印（vwatermark）",
+							"Href": "api/reference/fop/av/video-watermark.html",
+							"Child": null,
+							"Order": 139
+						}
+					],
+					"Order": 160
+				},
+				{
+					"Title": "文档处理",
+					"Href": "api/reference/fop/document.html",
+					"Child": null,
+					"Order": 130
+				},
+				{
+					"Title": "MD转HTML（md2html）",
+					"Href": "api/reference/fop/md2html.html",
+					"Child": null,
+					"Order": 110
+				},
+				{
+					"Title": "二维码（qrcode）",
+					"Href": "api/reference/fop/qrcode.html",
+					"Child": null,
+					"Order": 110
+				}
+			],
+			"Order": 500
+		},
+		{
+			"Title": "状态码",
+			"Href": "api/reference/codes.html",
+			"Child": null,
+			"Order": 300
+		},
+		{
+			"Title": "HTTP扩展字段",
+			"Href": "api/reference/extended-headers.html",
+			"Child": null,
+			"Order": 200
+		},
+		{
+			"Title": "错误格式",
+			"Href": "api/reference/err.html",
+			"Child": null,
+			"Order": 100
+		}
+	]
+}

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api_layout.html
 title: qrsync 命令行同步工具
 ---
 
@@ -8,6 +8,7 @@ title: qrsync 命令行同步工具
 
 qrsync 是一个根据七牛云存储API实现的简易命令行辅助上传同步工具，支持断点续上传，增量同步，它可将用户本地的某目录的文件同步到七牛云存储中，同步或上传几百GB甚至上TB的文件毫无鸭梨。
 
+**注意：被同步的文件名和路径必须是utf8编码，非utf8的文件名和路径将会同步失败**
 
 ## 下载
 
@@ -44,6 +45,8 @@ qrsync 命令行辅助同步工具下载地址：
 `sync_dir` 是本地需要上传的目录，绝对路径完整表示。这个目录中的所有内容会被同步到指定的 `bucket` 上。注意：Windows 平台上路径的表示格式为：`盘符:/目录`，比如 E 盘下的目录 data 表示为：`e:/data` 。
 
 `async_ops` 是设置上传预转参数，一般上传的音视频如果需要转码，可以使用该参数。详情参考：[音视频上传预转 - asyncOps](/api/put.html#uploadToken-asyncOps)
+
+`ignore_patterns` 参数是一个关于忽略文件或目录的匹配字符串数组，匹配规则类似`.gitignore`,参考[具体规则](http://kb.qiniu.com/53bld49u)
 
 可以在 [七牛云存储开发者网站后台](https://portal.qiniu.com/) 进行相应的域名绑定操作，域名绑定成功后，若您将 bucket 设为公用（public）属性，则可以用如下方式对上传的文件进行访问：
 
