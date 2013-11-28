@@ -1,13 +1,11 @@
 ---
 layout: api_layout
-title: "其他数据处理支持"
+title: 二维码（qrcode）
 order: 110
 ---
 
-## 其他数据处理支持
-
-<a name="qr-code"></a>
-### 生成二维码
+<a name="qrcode"></a>
+## 二维码（qrcode）
 
 生成二维码功能可以为存放在七牛云存储上的资源的url生成一个二维码图片，方便用户在各种客户端之间传播资源。所生成的二维码图片格式为png。
 
