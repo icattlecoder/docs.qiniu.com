@@ -171,5 +171,5 @@ X-Reqid: swEAAMipp-5bIjMT
 - [创建资源（mkfile）](mkfile.html)
 
 [sendBugReportHref]:            mailto:support@qiniu.com?subject=599错误日志     "发送错误报告"
-[uploadTokenHref]               ../security/upload-token.html                    "上传凭证"
+[uploadTokenHref]:              ../security/upload-token.html                    "上传凭证"
 [commonHttpResponseHeaderHref]: ../extended-headers.html                         "常见响应头部信息"
