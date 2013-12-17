@@ -7,11 +7,6 @@ order: 174
 <a id="imageMogr"></a>
 # 高级图像处理
 
-<a id="imageMogr-tag"></a>
-## 标签
-
-[缩略图](thumbnailHref)
-
 <a id="imageMogr-description"></a>
 ## 描述
 
@@ -463,8 +458,8 @@ HTTP状态码 | 含义
 - [预转异步处理][persistentOpsHref]
 - [saveas处理][saveasHref]
 
-[cnameBindingHref]:             ../../../overview/service/cname-binding.html     "域名绑定"
-[pfopHref]:                     ../fop/pfop/pfop.html                            "触发异步处理"
+[cnameBindingHref]:             http://kb.qiniu.com/53a48154                     "域名绑定"
+[pfopHref]:                     ../pfop/pfop.html                            "触发异步处理"
 [persistentOpsHref]:            ../../security/put-policy.html#put-policy-struct "预转异步处理"
 [saveasHref]:                   ../saveas.html                                   "saveas处理"
 

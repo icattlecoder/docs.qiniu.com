@@ -7,11 +7,6 @@ order: 185
 <a id="saveas"></a>
 # 处理结果另存（saveas）
 
-<a id="tag"></a>
-## 标签
-
-[辅助功能](helperHref)
-
 <a id="description"></a>
 ## 描述
 
@@ -141,4 +136,4 @@ func makeSaveasUrl(URL, accessKey string, secretKey []byte, saveBucket, saveKey 
     http://t-test.qiniudn.com/Ship-thumb-200.jpg
 	```
 
-[encodedEntryURIHref]:  http://docs.qiniu.com/api/v6/rs.html#words       "EncodedEntryURI格式"
+[accessTokenHref]:              ../security/access-token.html                    "管理凭证"
