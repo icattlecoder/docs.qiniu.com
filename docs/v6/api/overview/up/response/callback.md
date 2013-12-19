@@ -72,6 +72,7 @@ POST /callback  HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 User-Agent: qiniu go-sdk v6.0.0
 Host: api.examples.com
+Authorization: QBox iN7NgwM31j4-BZacMjPrOQBs34UG1maYCAQmhdCV:tDK-3f5xF3SJYEAwsll5g=
 
 name=sunflower.jpg&hash=Fn6qeQi4VDLQ347NiRm- \
 RlQx_4O2&location=Shanghai&price=1500.00&uid=123
@@ -115,23 +116,23 @@ X-Reqid: iDYAAPBicOGXLUET
 
 由于回调地址是公网可任意访问的，回调服务如何确认一次回调是合法的呢?
 
-七牛云存储在回调时会对请求数据加密，并将结果包含在请求头HTTP_AUTHORIZARION字段中，示例如下：
+七牛云存储在回调时会对请求数据加密，并将结果包含在请求头Authorization字段中，示例如下：
 ```
-HTTP_AUTHORIARTION:QBox iN7NgwM31j4-BZacMjPrOQBs34UG1maYCAQmhdCV:tDK-3f5xF3SJYEAwsll5g=
+ Authorization:QBox iN7NgwM31j4-BZacMjPrOQBs34UG1maYCAQmhdCV:tDK-3f5xF3SJYEAwsll5g=
 ```
 其中`QBox `为固定值，`iN7Ngw...dCV`为用户的Accesskey,`tDK-3f...5g=`为加密结果(encoded_data)
 
 回调服务器可以通过以下方法验证其合法性：
 
-- 获取HTTP_AUTHORIZATION字段值中的加密结果部分encoded_data    
+- 获取AUTHORIZATION字段值中的加密结果部分encoded_data    
 
 - 根据Accesskey选取正确的SecretKey
 
 - 获取明文：data = Request.URL +"\n" +Request.Body
 
-- 采用HMAC-SHA1加密算法，对明文<RAWDATA>加密，秘钥为SecretKey,比较加密结果是否与HTTP_AUTHORIZATION中的encoded_data字段相同
+- 采用HMAC-SHA1加密算法，对明文data加密，秘钥为SecretKey,比较加密结果是否与Authorization中的encoded_data字段相同
 
-以php语言为示例，验证代码如下：
+以PHP语言为示例，验证代码如下：
 
 ``` php
 /**
