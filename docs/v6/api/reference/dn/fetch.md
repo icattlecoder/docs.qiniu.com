@@ -45,7 +45,6 @@ EncodedURL 参数为对指定URL地址的URL安全的base64编码后的字符串
 Authorization | 该参数应严格按照[管理凭证][accessTokenHref]格式进行填充，否则会返回401错误码。<p>一个合法的Authorization值应类似于：`QBox QNJi_bYJlmO5LeY08FfoNj9w_r7...`。 | 是
 
 使用本API无需设置额外头部信息。  
-其它可用请求头部信息请参考[常用请求头部信息]()。
 
 <a id="fetch-request-body"></a>
 ### 请求内容

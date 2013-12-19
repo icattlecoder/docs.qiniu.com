@@ -45,7 +45,6 @@ EncodedEntryURI的细节请查看[EncodedEntryURI格式][encodedEntryURIHref]。
 Authorization | 该参数应严格按照[管理凭证][accessTokenHref]格式进行填充，否则会返回401错误码。<p>一个合法的Authorization值应类似于：`QBox QNJi_bYJlmO5LeY08FfoNj9w_r7...`。 | 是
 
 使用本API无需设置额外头部信息。  
-其它可用请求头部信息请参考[常用请求头部信息]()。
 
 <a id="stat-request-body"></a>
 ### 请求内容
@@ -83,7 +82,7 @@ Content-Type  | 正常情况下该值将被设为`application/json`，表示返�
 字段名称       | 类型   | 说明
 :------------- | :----- | :------------------------------
 fsize          | int    | 文件尺寸，单位为字节。
-hash           | string | 文件的[ETag]()信息。
+hash           | string | 文件的ETag信息。
 mimeType       | string | 以MIME信息表达的文件类型。<p>关于各种MIME值的含义，请参见[MIME Media Types][mimeMediaTypesHref]（内容由IANA维护）。
 putTime        | int64  | 文件上传时的服务器端Epoch时间戳，单位为100纳秒。<p>例如值为`13603956734587420`的时间对应实际时间为`2013-02-09 15:41:13`。
 
