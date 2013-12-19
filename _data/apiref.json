@@ -43,6 +43,12 @@
 			"Href": "docs/v6/api/reference/up/",
 			"Child": [
 				{
+					"Title": "直传文件（upload）",
+					"Href": "docs/v6/api/reference/up/upload.html",
+					"Child": null,
+					"Order": 200
+				},
+				{
 					"Title": "创建块（mkblk）",
 					"Href": "docs/v6/api/reference/up/mkblk.html",
 					"Child": null,
@@ -55,12 +61,6 @@
 					"Order": 90
 				},
 				{
-					"Title": "直传文件（upload）",
-					"Href": "docs/v6/api/reference/up/upload.html",
-					"Child": null,
-					"Order": 50
-				},
-				{
 					"Title": "创建文件（mkfile）",
 					"Href": "docs/v6/api/reference/up/mkfile.html",
 					"Child": null,
@@ -68,6 +68,25 @@
 				}
 			],
 			"Order": 800
+		},
+		{
+			"Title": "DN",
+			"Href": "docs/v6/api/reference/dn/",
+			"Child": [
+				{
+					"Title": "从Url获取资源（fetch）",
+					"Href": "docs/v6/api/reference/dn/fetch.html",
+					"Child": null,
+					"Order": 800
+				},
+				{
+					"Title": "镜像资源预取更新（prefetch）",
+					"Href": "docs/v6/api/reference/dn/prefetch.html",
+					"Child": null,
+					"Order": 800
+				}
+			],
+			"Order": 600
 		},
 		{
 			"Title": "资源管理",
@@ -229,6 +248,12 @@
 			"Href": "docs/v6/api/reference/extended-headers.html",
 			"Child": null,
 			"Order": 200
+		},
+		{
+			"Title": "数据格式（DataFormat）",
+			"Href": "docs/v6/api/reference/data-formats.html",
+			"Child": null,
+			"Order": 150
 		},
 		{
 			"Title": "错误格式",
