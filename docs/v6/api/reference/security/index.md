@@ -9,7 +9,7 @@ order: 900
 
 本节描述与资源访问安全性相关的接口规格，涵盖以下内容：  
 
-* [上传策略][putPolicyHref]
+* [上传策略（PutPolicy）][putPolicyHref]
 * [上传凭证][uploadTokenHref]
 * [下载凭证][downloadTokenHref]
 * [管理凭证][accessTokenHref]

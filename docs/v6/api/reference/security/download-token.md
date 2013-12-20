@@ -1,14 +1,13 @@
 ---
 layout: docs
-title: 下载凭证（DownloadToken）
+title: 下载凭证
 order: 960
 ---
 
 <a id="download-token"></a>
-# 下载凭证（DownloadToken）
+# 下载凭证
 
-下载凭证是七牛云存储用于验证下载私有资源请求合法性的机制。  
-用户通过下载凭证授权客户端，使其具备访问指定私有资源的能力。  
+下载凭证是七牛云存储用于验证下载私有资源请求合法性的机制。用户通过下载凭证授权客户端，使其具备访问指定私有资源的能力。  
 
 <a id="download-token-algorithm"></a>
 ## 算法

@@ -1,41 +1,42 @@
 ---
 layout: docs
-title: 从Url获取资源（fetch）
-order: 800
+title: 更新镜像资源（prefetch）
+order: 300
 ---
 
-<a id="fetch"></a>
-# 从Url获取资源（fetch）
+<a id="prefetch"></a>
+# 更新镜像资源（prefetch）
 
-<a id="fetch-description"></a>
+<a id="prefetch-description"></a>
 ## 描述
-将指定的一个URL资源下载到指定的bucket空间中。
 
-<a id="fetch-request"></a>
+对于设置了镜像存储的空间，从镜像源站抓取指定名称的资源并存储到该空间中。如果该空间中已存在该名称的资源，则自动覆盖。
+
+<a id="prefetch-request"></a>
 ## 请求
 
-<a id="fetch-request-syntax"></a>
+<a id="prefetch-request-syntax"></a>
 ### 请求语法
 
 ```
-POST /fetch/<EncodedURL>/to/<EncodedEntryURI> HTTP/1.1
+POST /prefetch/<EncodedEntryURI>
 Host:           iovip.qbox.me
 Content-Type:   application/x-www-form-urlencoded
 Authorization:  QBox <AccessToken>
 ```
-EncodedURL 参数为对指定URL地址的URL安全的base64编码后的字符串，EncodedEntryURI 的细节请查看[EncodedEntryURI]。
+EncodedEntryURI 的细节请查看[EncodedEntryURI]。
 
-<a id="fetch-request-auth"></a>
+<a id="prefetch-request-auth"></a>
 ### 访问权限
 
 [管理凭证（AccessToken）][accessTokenHref]方式。
 
-<a id="fetch-request-params"></a>
+<a id="prefetch-request-params"></a>
 ### 请求参数
 
 该请求无需设置任何参数。
 
-<a id="fetch-request-headers"></a>
+<a id="prefetch-request-headers"></a>
 ### 头部信息
 
 该请求必须指定以下头部信息。
@@ -47,15 +48,15 @@ Authorization | 该参数应严格按照[管理凭证][accessTokenHref]格式进
 使用本API无需设置额外头部信息。  
 其它可用请求头部信息请参考[常用请求头部信息]()。
 
-<a id="fetch-request-body"></a>
+<a id="prefetch-request-body"></a>
 ### 请求内容
 
 该请求无需指定请求内容。
 
-<a id="fetch-response"></a>
+<a id="prefetch-response"></a>
 ## 响应
 
-<a id="fetch-request-syntax"></a>
+<a id="prefetch-request-syntax"></a>
 ### 响应语法
 
 ```
@@ -64,7 +65,7 @@ Content-Type: application/json
 Cache-Control: no-store
 ```
 
-<a id="fetch-response-headers"></a>
+<a id="prefetch-response-headers"></a>
 ### 头部信息
 
 头部名称      | 说明                              
@@ -73,7 +74,7 @@ Content-Type  | 正常情况下该值将被设为`application/json`，表示返�
 
 其它可能返回的头部信息，请参考[常见响应头部信息][commonHttpResponseHeaderHref]。
 
-<a id="fetch-response-body"></a>
+<a id="prefetch-response-body"></a>
 ### 响应内容
 
 如果请求成功，该响应不返回任何内容。  
@@ -86,7 +87,7 @@ Content-Type  | 正常情况下该值将被设为`application/json`，表示返�
 }
 ```
 
-<a id="fetch-example1-command"></a>
+<a id="prefetch-example1-command"></a>
 ### 命令行示例
 
 ```
@@ -95,21 +96,21 @@ curl -i \
      -H 'Content-Type: application/x-www-form-urlencoded' \
      -H 'Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...' \
      -X POST \
-     'http://iovip.qbox.me/fetch/aHR0cDovL3Fpbml1LmNvbS9pbmRleC5odG1s/to/bmV3ZG9jczpmaW5kLm1hbi50eHQ='
+     'http://iovip.qbox.me/prefetch/bmV3ZG9jczpmaW5kLm1hbi50eHQ='
 ```
 
-<a id="fetch-example1-request"></a>
+<a id="prefetch-example1-request"></a>
 ### 请求示例
 
 ```
-POST /fetch/aHR0cDovL3Fpbml1LmNvbS9pbmRleC5odG1s/to/bmV3ZG9jczpmaW5kLm1hbi50eHQ= HTTP/1.1
+POST /prefetch/bmV3ZG9jczpmaW5kLm1hbi50eHQ= HTTP/1.1
 User-Agent: curl/7.30.0
 Host: iovip.qbox.me
 Accept: */*
 Authorization: QBox u8WqmQu1jH21kxpIQmo2LqntzugM1VoHE9_pozCU:2LJIG...(过长已省略)
 ```
 
-<a id="fetch-example1-response"></a>
+<a id="prefetch-example1-response"></a>
 ### 响应示例
 
 ```
@@ -123,12 +124,12 @@ X-Log: RS.in;RS.mo;qtbl.mv:3;MQ;MC/404;RS.mcd:1;RS:5
 X-Reqid: wxIAAD3btw-v3TwT
 ```
 
-<a id="fetch-remarks"></a>
+<a id="prefetch-remarks"></a>
 ## 附注
 
 无。
 
-<a id="fetch-internal-resources"></a>
+<a id="prefetch-internal-resources"></a>
 ## 内部参考资源
 
 - [管理凭证][accessTokenHref]

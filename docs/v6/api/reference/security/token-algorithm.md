@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: 凭证算法（TokenAlgorithm）
+title: 凭证算法
 order: 990
 ---
 
 <a id="token-algorithm"></a>
-# 凭证算法（TokenAlgorithm）
+# 凭证算法
 
 七牛云存储使用的凭证包含三种：上传凭证、下载凭证、管理凭证。这三种凭证的原始数据（我们称之为`data`）不同，但从原始数据生成相应凭证的算法则完全一致。此处详细描述该算法过程。
 
@@ -46,7 +46,7 @@ order: 990
 	5Cr3Nrw0qkyYKfQicd_ejAdIrfs=
 	```
 	
-以下PHP代码示范了上面的完整过程。如果希望了解其他语言的实现，请查看相应SDK的源代码（所有SDK均在[Qiniu@Github](https://github.com/qiniu)上完全开源）。
+以下PHP代码示范了上面的完整过程。如果希望了解其他语言的实现，请查看相应SDK的源代码（所有SDK均在[Github](https://github.com/qiniu)上完全开源）。
 
 ```
 <?php
