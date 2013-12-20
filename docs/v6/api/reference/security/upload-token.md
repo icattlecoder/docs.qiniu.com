@@ -1,14 +1,13 @@
 ---
 layout: docs
-title: 上传凭证（UploadToken）
+title: 上传凭证
 order: 970
 ---
 
 <a id="upload-token"></a>
-# 上传凭证（UploadToken）
+# 上传凭证
 
-上传凭证是七牛云存储用于验证上传请求合法性的机制。  
-用户通过上传凭证授权客户端，使其具备访问指定资源的能力。  
+上传凭证是七牛云存储用于验证上传请求合法性的机制。用户通过上传凭证授权客户端，使其具备访问指定资源的能力。  
 
 <a id="upload-token-algorithm"></a>
 ## 算法
