@@ -113,11 +113,15 @@ $(function() {
         }
     };
     // 技术支持 模态窗口
-    $('.js-initFeedBack').on('click', function() {
+    // $('.js-initFeedBack').on('click', function() {
+    //     QiniuFeedBack.show();
+    //     return false;
+    // });
+
+    $('.js-zendesk').on('click', function() {
         QiniuFeedBack.show();
         return false;
     });
-
 
     //给API页面所有图片的父元素添加一个居中类
     $('.api-content img').each(function() {
