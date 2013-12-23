@@ -1541,6 +1541,9 @@ div.api-resource .social-resource .author {
   margin-left: 5px;
   line-height: 21px;
 }
+.container.resource .large.cell .cell-body .resource-card .content .describe {
+  height: 42px;
+}
 .container.resource .large.cell .cell-body .resource-card .content .info .version {
   margin-right: 15px;
 }

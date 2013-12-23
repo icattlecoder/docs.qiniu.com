@@ -1,14 +1,13 @@
 ---
 layout: docs
-title: 管理凭证（AccessToken）
+title: 管理凭证
 order: 950
 ---
 
 <a id="access-token"></a>
-# 管理凭证（AccessToken）
+# 管理凭证
 
-管理凭证是七牛云存储用于验证管理请求合法性的机制。  
-建议仅在业务服务器使用这一类凭证，避免意外授权导致滥用。  
+管理凭证（Access Token）是七牛云存储用于验证管理请求合法性的机制。建议仅在业务服务器使用这一类凭证，避免意外授权导致滥用。  
 
 <a id="access-token-algorithm"></a>
 ## 算法
