@@ -134,8 +134,8 @@ Cache-Control  | 是   | 缓存控制，固定为no-store，不缓存
 
 字段名称 | 必填 | 说明                              
 :------- | :--- | :--------------------------------------------------------------------
-`<hash>` | 是   | 目标资源的SHA1值，可用于[ETag头部]()
-`<key>`  | 是   | 目标资源的最终名字，可由七牛云存储[自动命名]()
+`<hash>` | 是   | 目标资源的SHA1值，可用于ETag头部
+`<key>`  | 是   | 目标资源的最终名字，可由七牛云存储自动命名
 
 ■ 如果请求失败，返回包含如下内容的JSON字符串（已格式化，便于阅读）：  
 
@@ -187,7 +187,7 @@ HTTP状态码 | 含义
 - [MIME类型][mimeTypeHref]
 - [MIME清单][mimeTypeListHref]
 
-[encodedEntryURIHref]:          ../data-formats.html                             "EncodedEntryURI格式"
+[encodedEntryURIHref]:          ../data-formats.html#data-format-encoded-entry-uri "EncodedEntryURI格式"
 
 [uploadTokenHref]:          ../security/upload-token.html                                "上传凭证"
 [putPolicyHref]:            ../security/put-policy.html                                  "上传策略"

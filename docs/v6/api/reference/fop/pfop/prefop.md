@@ -47,7 +47,6 @@ Host: api.qiniu.com
 Host          | 固定为api.qiniu.com                     | 是
 
 使用本API无需设置额外头部信息。  
-其它可用请求头部信息请参考[常用请求头部信息]()。
 
 <a id="prefop-response"></a>
 ## 响应
