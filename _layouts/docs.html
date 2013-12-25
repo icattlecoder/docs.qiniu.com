@@ -67,8 +67,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a href="#"> API使用说明 </a>
+                            <a href="#" {{if isstart_with $url .data.apiview.Name}} class="active"{{end}}> API使用说明 </a>
+
+{{if isstart_with $url .data.apiview.Name}}
+                            <span class="icon api_down">
+{{else}}
                             <span class="icon api_default">
+{{end}}
                             </span>
                         </h4>
                     </div>
@@ -154,7 +159,37 @@
                         </ul>
                     </div>
                 </div>
-                {{ .includes.api_sdk_menu }}
+
+                <div class="panel panel-default ">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#"> SDK </a>
+                            <span class="icon api_default">
+                            </span>
+                        </h4>
+                    </div>
+                    <div class="panel-body" {{if isstart_with $url "docs/v6/sdk/"}} style="display:block"{{end}}>
+                        <ul class="panel-list level-one">
+                            {{range .data.resource.sdk}}
+                            <li>
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <span class="icon off_1">
+                                        </span>
+                                        <a href="{{.doc}}" class="link">{{.label}} </a>
+                                    </h5>
+                                </div>
+                                <div class="panel-body" id="{{.name}}-sdk" {{if eq .doc $url}}
+style="display:block"
+{{end}}>
+                                    
+                                </div>
+                            </li>
+                            {{end}}
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="panel panel-default" >
                     <div class="panel-heading">
                         <h4 class="panel-title">
