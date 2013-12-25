@@ -214,7 +214,7 @@ $(function() {
         }
     });
 
-    //API页面侧边栏---显示当前页的导航
+    API页面侧边栏---显示当前页的导航
     $('.panel-body a').each(function() {
         var href = $(this).attr('href').toLowerCase();
         if (url === href) {

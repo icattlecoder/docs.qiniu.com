@@ -40,7 +40,7 @@ order: 990
 
 4. 对HMAC-SHA1签名进行URL安全的Base64编码
 
-	该步与以上第二步使用完全相同的[URL安全的Base64编码]()函数。这一步会得到类似于如下的结果，我们将结果命名为**`encoded_signature`**：
+	该步与以上第二步使用完全相同的[URL安全的Base64编码][urlsafeBase64Href]函数。这一步会得到类似于如下的结果，我们将结果命名为**`encoded_signature`**：
 	
 	```
 	5Cr3Nrw0qkyYKfQicd_ejAdIrfs=

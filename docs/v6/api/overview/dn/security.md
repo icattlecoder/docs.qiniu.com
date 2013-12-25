@@ -47,7 +47,7 @@ http://<domain>/<key>?e=<deadline>&token=<downloadToken>
 > 
 > 由于开发者无法保证客户端的时间都校准，所以应该在业务服务器上创建时间戳，并周期性校准业务服务器时钟。
 
-参数`token`携带下载凭证。下载凭证是对资源访问的授权，不带下载凭证或下载凭证不合法都会导致401错误，表示验证失败。关于下载凭证的生成，请参见[下载凭证规格]()。
+参数`token`携带下载凭证。下载凭证是对资源访问的授权，不带下载凭证或下载凭证不合法都会导致401错误，表示验证失败。关于下载凭证的生成，请参见[下载凭证][downloadTokenHref]。
 
 <a id="anti-leech"></a>
 ## 防盗链
@@ -57,3 +57,5 @@ http://<domain>/<key>?e=<deadline>&token=<downloadToken>
 我们可以通过HTTP协议支持的Referer机制（参见HTTP Referer）来进行相应的来源识别和管理。
 
 防盗链是一个系统设置，不影响开发工作。如发现有盗链情况，开发者可在开发者平台的空间设置页面进行相应的设置。
+
+[downloadTokenHref]: ../../reference/security/download-token.html "下载凭证"

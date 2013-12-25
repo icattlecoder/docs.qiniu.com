@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{{$url:=.page.url}}
 
 <head>
     <meta name="robots" content="all" />
@@ -71,7 +72,7 @@
                             </span>
                         </h4>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" {{if isstart_with $url .data.apiview.Name}} style="display:block"{{end}}>
                         <ul class="panel-list level-one">
                             {{range .data.apiview.Items}}
                             <li>
@@ -83,7 +84,7 @@
                                         <span class="icon"></span>
                                     </h5>
                                 </div>
-                                <div class="panel-body panel-status">
+                                <div class='panel-body panel-status' {{if isstart_with $url .Href }} style="display:block"{{end}}>
                                     {{if isnot_nil_or_empty .Child}}
                                     <ul class="panel-list level-three nav">
                                         {{range .Child}}
@@ -116,7 +117,7 @@
                             </span>
                         </h4>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" {{if isstart_with $url .data.apiref.Name}} style="display:block"{{end}}>
                         <ul class="panel-list level-one">
                             {{range .data.apiref.Items}}
                             <li>
@@ -128,7 +129,7 @@
                                         <span class="icon"></span>
                                     </h5>
                                 </div>
-                                <div class="panel-body panel-status">
+                                <div class='panel-body panel-status' {{if isstart_with $url .Href }} style="display:block"{{end}}>
                                     {{if isnot_nil_or_empty .Child}}
                                     <ul class="panel-list level-three nav">
                                         {{range .Child}}
@@ -154,7 +155,7 @@
                     </div>
                 </div>
                 {{ .includes.api_sdk_menu }}
-                <div class="panel panel-default">
+                <div class="panel panel-default" >
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#">
@@ -164,7 +165,7 @@
                             </span>
                         </h4>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body"  {{if isstart_with $url "docs/v6/tools/"}} style="display:block"{{end}}>
                         <ul class="panel-list level-one">
                             <li>
                                 <div class="panel-heading">
@@ -225,7 +226,7 @@
                             </span>
                         </h4>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" {{if isstart_with $url .data.kb.Name}} style="display:block"{{end}}>
                         <ul class="panel-list level-one">
                             {{range .data.kb.Items}}
                             <li>
@@ -237,7 +238,7 @@
                                         <span class="icon"></span>
                                     </h5>
                                 </div>
-                                <div class="panel-body  panel-status">
+                                <div class="panel-body  panel-status" {{if isstart_with $url .Href }} style="display:block"{{end}}>
                                     {{if isnot_nil_or_empty .Child}}
                                     <ul class="panel-list level-three nav">
                                         {{range .Child}}
