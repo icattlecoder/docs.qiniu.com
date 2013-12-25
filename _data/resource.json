@@ -6,7 +6,7 @@
         "download": "https://github.com/qiniu/ios-sdk/archive/master.zip",
         "version": "v6.0.0",
         "date": "2013-07-04",
-        "doc": "/sdk/ios",
+        "doc": "docs/v6/sdk/ios-sdk.html",
         "source": "https://github.com/qiniu/ios-sdk"
     }, {
         "name": "android",
